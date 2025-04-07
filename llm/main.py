@@ -9,12 +9,10 @@ app = FastAPI()
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL")
-genai.configure(api_key=GEMINI_API_KEY)
 
 @app.post("/")
 async def generate_message(request: Request):
     data = await request.json()
-    
     user_message = data.get("message", "")
     image_url = data.get("image_url")
 
