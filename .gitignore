@@ -1,3 +1,4 @@
 llm/*.venv
 llm/*__pycache__
+llm/gemini.json
 *.env
