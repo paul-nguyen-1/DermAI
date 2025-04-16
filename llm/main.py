@@ -1,5 +1,4 @@
 from fastapi import FastAPI, Request
-import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.schema import HumanMessage
 from dotenv import load_dotenv
